@@ -1,0 +1,12 @@
+{{ define "content" }}
+<h1>User Details</h1>
+<p>Full Name: {{ .User.FullName }}</p>
+<p>Email: {{ .User.Email }}</p>
+<p>Telephone: {{ .User.Telephone }}</p>
+<button onclick="window.location.replace('/user/edit')">Edit User</button>
+<button class="redBtn" onclick="logout()">Log out</button>
+
+<div id="display-error"></div>
+<script src="/static/js/logout.js"></script>
+
+{{ end }}
